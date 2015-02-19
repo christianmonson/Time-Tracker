@@ -7,16 +7,37 @@
 //
 
 #import "TTListViewController.h"
+#import "TTListDataSource.h"
 
 @interface TTListViewController ()
+
+@property (nonatomic, strong)TTListDataSource *dataSource;
+@property (nonatomic, strong)UITableView *tableView;
 
 @end
 
 @implementation TTListViewController
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.dataSource = [TTListDataSource new];
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:self.tableView];
+    
+    self.tableView.dataSource = self.dataSource;
+    self.tableView.delegate = self;
+    
+
+
 }
 
 - (void)didReceiveMemoryWarning {

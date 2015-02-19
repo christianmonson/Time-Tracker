@@ -20,6 +20,7 @@
 		7116F79919421700006C8F06 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7116F79719421700006C8F06 /* InfoPlist.strings */; };
 		7116F79B19421700006C8F06 /* Time_TrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7116F79A19421700006C8F06 /* Time_TrackerTests.m */; };
 		EB7333F31A96896800C3811F /* TTListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7333F21A96896800C3811F /* TTListViewController.m */; };
+		EB7333FA1A968F9A00C3811F /* TTListDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7333F91A968F9A00C3811F /* TTListDataSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		7116F79A19421700006C8F06 /* Time_TrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Time_TrackerTests.m; sourceTree = "<group>"; };
 		EB7333F11A96896800C3811F /* TTListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTListViewController.h; sourceTree = "<group>"; };
 		EB7333F21A96896800C3811F /* TTListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTListViewController.m; sourceTree = "<group>"; };
+		EB7333F81A968F9A00C3811F /* TTListDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTListDataSource.h; path = ../TTListDataSource.h; sourceTree = "<group>"; };
+		EB7333F91A968F9A00C3811F /* TTListDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTListDataSource.m; path = ../TTListDataSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +117,8 @@
 				7116F78519421700006C8F06 /* TTAppDelegate.m */,
 				EB7333F11A96896800C3811F /* TTListViewController.h */,
 				EB7333F21A96896800C3811F /* TTListViewController.m */,
+				EB7333F81A968F9A00C3811F /* TTListDataSource.h */,
+				EB7333F91A968F9A00C3811F /* TTListDataSource.m */,
 				7116F78719421700006C8F06 /* Images.xcassets */,
 				7116F77C19421700006C8F06 /* Supporting Files */,
 			);
@@ -245,6 +250,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB7333FA1A968F9A00C3811F /* TTListDataSource.m in Sources */,
 				7116F78619421700006C8F06 /* TTAppDelegate.m in Sources */,
 				7116F78219421700006C8F06 /* main.m in Sources */,
 				EB7333F31A96896800C3811F /* TTListViewController.m in Sources */,
