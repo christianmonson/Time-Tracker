@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TTDetailViewController">
+            <connections>
+                <outlet property="Report" destination="JDd-ou-DoR" id="d3L-Pz-ws4"/>
+                <outlet property="add" destination="JDd-ou-DoR" id="Mrq-5S-j7C"/>
+                <outlet property="clockIn" destination="JDd-ou-DoR" id="zcZ-Vf-8jL"/>
+                <outlet property="clockOut" destination="JDd-ou-DoR" id="riG-7m-1Xf"/>
+                <outlet property="tableView" destination="31Q-mr-TqN" id="6Oj-Qh-6nB"/>
+                <outlet property="timeLabel" destination="a3I-bp-kMu" id="s9x-Kk-LnW"/>
+                <outlet property="titleField" destination="NAU-5R-koB" id="IAb-ah-sFi"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NAU-5R-koB">
+                    <rect key="frame" x="252" y="58" width="97" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="8" y="81" width="384" height="30"/>
+                    </variation>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3I-bp-kMu">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="17" y="119" width="360" height="84"/>
+                    </variation>
+                </label>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JDd-ou-DoR">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <items>
+                        <barButtonItem title="Add" id="1lk-MS-2J7">
+                            <connections>
+                                <action selector="add:" destination="-1" id="LBM-Ce-NPO"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="Agl-BL-SxJ"/>
+                        <barButtonItem title="In" id="g76-1x-9Ml">
+                            <connections>
+                                <action selector="clockIn:" destination="-1" id="22E-bd-rSy"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="OVY-gd-oRO"/>
+                        <barButtonItem title="Out" id="sFq-2T-CZu">
+                            <connections>
+                                <action selector="Out:" destination="-1" id="B84-w2-VH5"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="IJY-tZ-A8s"/>
+                        <barButtonItem title="Report" id="wmH-v3-4RJ">
+                            <connections>
+                                <action selector="Report:" destination="-1" id="eKY-gI-Viw"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="0.0" y="756" width="400" height="44"/>
+                    </variation>
+                </toolbar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="31Q-mr-TqN">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="0.0" y="211" width="400" height="545"/>
+                    </variation>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="a3I-bp-kMu"/>
+                    <exclude reference="JDd-ou-DoR"/>
+                    <exclude reference="31Q-mr-TqN"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="a3I-bp-kMu"/>
+                    <include reference="JDd-ou-DoR"/>
+                    <include reference="31Q-mr-TqN"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
