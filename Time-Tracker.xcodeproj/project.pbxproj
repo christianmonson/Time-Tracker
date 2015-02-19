@@ -21,6 +21,9 @@
 		7116F79B19421700006C8F06 /* Time_TrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7116F79A19421700006C8F06 /* Time_TrackerTests.m */; };
 		EB7333F31A96896800C3811F /* TTListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7333F21A96896800C3811F /* TTListViewController.m */; };
 		EB7333FA1A968F9A00C3811F /* TTListDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7333F91A968F9A00C3811F /* TTListDataSource.m */; };
+		EB7333FD1A96951700C3811F /* TTProject.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7333FC1A96951700C3811F /* TTProject.m */; };
+		EB7334021A96982100C3811F /* TTEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7334011A96982100C3811F /* TTEntry.m */; };
+		EB7334051A96987100C3811F /* TTProjectController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7334041A96987100C3811F /* TTProjectController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,12 @@
 		EB7333F21A96896800C3811F /* TTListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTListViewController.m; sourceTree = "<group>"; };
 		EB7333F81A968F9A00C3811F /* TTListDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTListDataSource.h; path = ../TTListDataSource.h; sourceTree = "<group>"; };
 		EB7333F91A968F9A00C3811F /* TTListDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTListDataSource.m; path = ../TTListDataSource.m; sourceTree = "<group>"; };
+		EB7333FB1A96951700C3811F /* TTProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTProject.h; sourceTree = "<group>"; };
+		EB7333FC1A96951700C3811F /* TTProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTProject.m; sourceTree = "<group>"; };
+		EB7334001A96982100C3811F /* TTEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTEntry.h; sourceTree = "<group>"; };
+		EB7334011A96982100C3811F /* TTEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTEntry.m; sourceTree = "<group>"; };
+		EB7334031A96987100C3811F /* TTProjectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTProjectController.h; sourceTree = "<group>"; };
+		EB7334041A96987100C3811F /* TTProjectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTProjectController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +124,8 @@
 			children = (
 				7116F78419421700006C8F06 /* TTAppDelegate.h */,
 				7116F78519421700006C8F06 /* TTAppDelegate.m */,
-				EB7333F11A96896800C3811F /* TTListViewController.h */,
-				EB7333F21A96896800C3811F /* TTListViewController.m */,
-				EB7333F81A968F9A00C3811F /* TTListDataSource.h */,
-				EB7333F91A968F9A00C3811F /* TTListDataSource.m */,
+				EB7333FE1A96957D00C3811F /* Model */,
+				EB7333FF1A96959300C3811F /* ListView */,
 				7116F78719421700006C8F06 /* Images.xcassets */,
 				7116F77C19421700006C8F06 /* Supporting Files */,
 			);
@@ -152,6 +159,30 @@
 				7116F79719421700006C8F06 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB7333FE1A96957D00C3811F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB7333FB1A96951700C3811F /* TTProject.h */,
+				EB7333FC1A96951700C3811F /* TTProject.m */,
+				EB7334001A96982100C3811F /* TTEntry.h */,
+				EB7334011A96982100C3811F /* TTEntry.m */,
+				EB7334031A96987100C3811F /* TTProjectController.h */,
+				EB7334041A96987100C3811F /* TTProjectController.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EB7333FF1A96959300C3811F /* ListView */ = {
+			isa = PBXGroup;
+			children = (
+				EB7333F11A96896800C3811F /* TTListViewController.h */,
+				EB7333F21A96896800C3811F /* TTListViewController.m */,
+				EB7333F81A968F9A00C3811F /* TTListDataSource.h */,
+				EB7333F91A968F9A00C3811F /* TTListDataSource.m */,
+			);
+			name = ListView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,8 +282,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB7333FA1A968F9A00C3811F /* TTListDataSource.m in Sources */,
+				EB7333FD1A96951700C3811F /* TTProject.m in Sources */,
 				7116F78619421700006C8F06 /* TTAppDelegate.m in Sources */,
+				EB7334051A96987100C3811F /* TTProjectController.m in Sources */,
 				7116F78219421700006C8F06 /* main.m in Sources */,
+				EB7334021A96982100C3811F /* TTEntry.m in Sources */,
 				EB7333F31A96896800C3811F /* TTListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
