@@ -28,15 +28,15 @@ static NSString * const projectListKey = @"projectkey";
 
 }
 
--(void)addProject:(TTProject *) project{
+- (void)addProject:(TTProject *) project {
     
 }
 
--(void)removeProject:(TTProject *)project{
+- (void)removeProject:(TTProject *) project {
     
 }
 
--(void)loadFromDefaults {
+- (void)loadFromDefaults {
     
     NSArray *projectDictionaries = [[NSUserDefaults standardUserDefaults] objectForKey:projectListKey];
     
@@ -47,7 +47,7 @@ static NSString * const projectListKey = @"projectkey";
     self.projects = projects;
 }
 
--(void)synchronize {
+- (void)synchronize {
     
     NSMutableArray *projectDictionaries = [NSMutableArray new];
     for (TTProject *project in self.projects) {

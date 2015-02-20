@@ -18,4 +18,6 @@
 -(void)addProject:(TTProject *) project;
 -(void)removeProject:(TTProject *) project;
 
+-(void)synchronize;
+
 @end

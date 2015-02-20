@@ -7,8 +7,10 @@
 //
 
 #import "TTDetailViewController.h"
+#import "TTProjectController.h"
 
-@interface TTDetailViewController ()
+@interface TTDetailViewController () <UITableViewDelegate, UITextFieldDelegate>
+
 @property (weak, nonatomic) IBOutlet UITextField *titleField;
 @property (weak, nonatomic) IBOutlet UILabel *timeLabel;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -23,7 +25,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.datasource.project = self.project;
 }
 
 - (IBAction)add:(id)sender {
@@ -38,6 +40,16 @@
 - (IBAction)Report:(id)sender {
 }
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    
+}
+
+- (BOOL)textFieldShouldEndEditing:(UITextField *)textField{
+    self.project.title = textField.text;
+    [[TTProjectController sharedInstance] synchronize];
+    
+    return YES;
+}
 
 
 
